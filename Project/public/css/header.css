@@ -1,0 +1,8 @@
+.container-fluid > .navbar-brand {
+    color: black;
+}
+
+.navbar-brand:hover, 
+.navbar-brand:focus {
+    color: black !important;
+}

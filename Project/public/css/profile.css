@@ -1,0 +1,40 @@
+.main_content {
+    text-align: center;
+    align-items: center;
+}
+
+.main_content > * {
+    margin: 0 auto;
+}
+
+.main_content > :first-child {
+    width: 100%;
+}
+
+.main_content > :first-child > h2 {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.main_content form {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_content > div {
+    margin-top: 20px;
+}
+
+.main_content * {
+    justify-content: center;
+    align-items: center;
+}
+
+.edit_information > form > div {
+    margin-bottom: 20px;
+}
+
+.edit_information > form > div > div > div > label {
+    margin-bottom: 10px;
+}

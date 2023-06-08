@@ -1,0 +1,30 @@
+#payment_option2 {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#continue_button {
+    position: absolute; 
+    bottom: 1rem; right: 1rem;
+}
+
+#pills-pay {
+    word-wrap: break-word;
+}
+
+@media only screen and (max-width: 768px) {
+    #payment_option2 {
+        border-left: 0px solid transparent;
+        border-right: 0px solid transparent;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    #pills-tabContentCheckout {
+        height: auto;
+    }
+
+    .checkout_tab {
+        margin-bottom: 50px;
+    }
+}

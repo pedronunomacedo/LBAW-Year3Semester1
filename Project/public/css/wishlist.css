@@ -1,0 +1,21 @@
+@media only screen and (max-width: 991px) {
+    #card_buttons > :first-child {
+        float: left;
+    }
+
+    #card_buttons > :last-child {
+        float: left;
+    }
+
+    #card_buttons {
+        top: 50px;
+    }
+
+    #product_price > p {
+        float: right;
+    }
+
+    #wishlist_summary {
+        
+    }
+}

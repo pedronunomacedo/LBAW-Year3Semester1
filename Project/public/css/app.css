@@ -1,0 +1,417 @@
+.userCard {
+    position: relative;
+    margin-top: 30px;
+}
+
+.card_buttons > a {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    size: 50px;
+}
+
+svg {
+    color: blue;
+}
+
+.w-5 {
+    display: none;
+}
+
+div.text-center > nav * {
+    margin-top: 20px;
+}
+
+/* Main Search Page */
+
+#mainPageSearchedProducts {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+#mainPageSearchedProducts > *:not(last-child) {
+    margin-bottom: 20px;
+}
+
+
+.category_card img {
+  background-color: #f6f6f6;
+  margin: auto;
+}
+
+.category_card a{
+  color: black;
+}
+
+.category_card:hover img {
+  transform: scale(1.1);
+  transition: .2s;
+  background-color: red;
+  border: 2px solid white;
+}
+
+.category_card:hover div {
+  display: flex;
+  width: 108px; 
+  height: 108px; 
+  border-radius: 50%; 
+  overflow: hidden;
+  border: 2px solid orangered;
+}
+
+.category_card:hover a {
+  color: red;
+}
+
+.rating-color {
+  color: rgb(228, 228, 1);
+}
+
+.wishlist_summary, .filter_sidebar, .filter_orderby_bar, .product_wishlist_card, .checkout_state_bar, .product_page_img, .product_page_tabs, .product_page_info {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.product_page_img img {
+  height: 34rem;
+  width: 34rem;
+  margin: 0 auto;
+}
+
+.product_page_info {
+  height: 16rem;
+}
+
+
+.product_card {
+  height: 32rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.product_card_img {
+  margin: 1rem auto;
+  width: 14rem;
+  height: 14rem;
+}
+
+.product_card_img img{
+  width: 14rem;
+  height: 14rem;
+}
+
+.product_card_img img:hover {
+  transform: scale(1.04);
+  transition: .2s;
+}
+
+.product_card_desc {
+  height: 4rem;
+  overflow: hidden;
+}
+
+.product_card_name {
+  height: 2.5rem;
+  overflow: hidden;
+  font-size: large;
+}
+
+.product_card_name a, .product_order_card_name a {
+  color: black;
+  text-decoration: none;
+}
+
+.product_card_name a:hover, .product_order_card_name a:hover {
+  color: red;
+  transition: .1s;
+}
+
+.product_card_price {
+  color: red;
+  font-size: 26px;
+}
+
+.product_card_price1, .product_card_date, .product_card_stock, .product_card_category {
+  font-size: 1.1em;
+}
+
+.product_card_btn button:hover {
+  color: red;
+}
+
+.breadcrumb-item a {
+  color: black;
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  color: red;
+  transition: .1s;
+} 
+
+.breadcrumb-item.active {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.filter_orderby_bar .form-select {
+  font-weight: bold;
+  width: 10rem;
+  border: 0;
+}
+
+.container div h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stepper-wrapper {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.stepper-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.stepper-item::before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  top: 20px;
+  left: -50%;
+  z-index: 2;
+}
+
+.stepper-item::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  z-index: 2;
+}
+
+.stepper-item .step-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ccc;
+  margin-bottom: 6px;
+}
+
+.stepper-item.active {
+  font-weight: bold;
+}
+
+.stepper-item.completed .step-counter {
+  background-color: #4bb543;
+}
+
+.stepper-item.completed::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #4bb543;
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  z-index: 3;
+}
+
+.stepper-item:first-child::before {
+  content: none;
+}
+.stepper-item:last-child::after {
+  content: none;
+}
+
+#user_wishlist_dropdown,
+  #user_wishlist_shopcart {
+    display: none;
+  }
+
+  #user_wishlist_icon, 
+  #user_shopcart_icon {
+    display: block;
+  }
+
+
+
+@media only screen and (max-width: 600px) {
+  main {
+    margin: 0 20px;
+  }
+
+  .path > li:last-child {
+    max-width: 150px;
+    white-space: nowrap;
+    object-fit: cover;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+  }
+}
+
+/* Header */
+@media only screen and (max-width: 991px) {
+  #user_wishlist_dropdown,
+  #user_wishlist_shopcart {
+    display: inline-block;
+  }
+
+  #user_wishlist_icon, 
+  #user_shopcart_icon {
+    display: none;
+  }
+}
+
+#pills-description-tab, #pills-reviews-tab {
+  color:#c0c0c0;
+  border-bottom: 4px solid #d5d5d5;
+  border-radius: 0;
+}
+
+#pills-description-tab.active, #pills-reviews-tab.active, #pills-address-tab.active, #pills-pay-tab.active, #pills-confirm-tab.active {
+  border-bottom: 4px solid red;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 0;
+}
+
+#pills-description-tab:hover, #pills-reviews-tab:hover, #pills-address-tab:hover, #pills-pay-tab:hover, #pills-confirm-tab:hover {
+  color: red;
+  transition: .1s;
+}
+
+.address_card {
+  border-radius: 10px;
+  position: relative;
+  border: 1px dotted black;
+  padding: 1rem;
+  width: 22rem;
+  height: 10rem;
+}
+
+.address_card input {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#pills-address-tab, #pills-pay-tab, #pills-confirm-tab {
+  color: #c0c0c0;
+  border-radius: 0;
+}
+
+
+#pills-tabContentCheckout {
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: white;
+  height: 26rem;
+  position: relative;
+}
+
+
+.order_card {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.user_card {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  width: 12rem;
+  font-size: 1.2em;
+  position: relative;
+}
+
+.user_card a {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: black;
+  text-decoration: none;
+}
+
+.user_card a:hover {
+  transition: .1s;
+  color: red;
+}
+
+.edit_del_btn {
+  top: -1.5rem;
+  right: 0;
+  position: absolute;
+  z-index: 5;
+}
+
+.edit_del_btn button {
+  border-radius: 50%;
+}
+
+#navbar {
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  display: none;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb:horizontal {
+  background: red; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb:vertical {
+  background: grey; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background: #b30000; 
+}
+
+.text-center > nav {
+  display: flex;
+  justify-content: center;
+}

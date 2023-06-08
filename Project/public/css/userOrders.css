@@ -1,0 +1,11 @@
+.orderProduct {
+    margin-bottom: 10px !important;
+}
+
+.order_info :not(:last-child) {
+    margin-right: 20px;
+}
+
+.product_order_info :not(:last-child) {
+    margin-right: 20px;
+}

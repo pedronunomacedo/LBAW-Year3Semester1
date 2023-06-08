@@ -1,0 +1,71 @@
+#addProductForm {
+    width: 100%;
+    text-align: center;
+}
+
+#addProductForm > div {
+    display: inline-block;
+}
+
+#product_rating > span:hover ~ span:before {
+    color: yellow !important;
+}
+
+#new_review, 
+.review:not(:first-child) {
+    padding-top: 10px;
+}
+
+.review:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+#new_review > :last-child {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.review_header {
+    display: flex;
+    flex-direction: row;
+}
+
+.header_buttons {
+    margin-left: 20px;
+    float: right;
+}
+
+@media only screen and (max-width: 600px) {
+    #new_comment_inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #new_comment_inputs > div:nth-child(2) > select {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .carousel-inner {
+        position: relative;
+    }
+    
+    .carousel-item {
+        position: absolute;
+        margin: 0px;
+        top: 50%;
+        left: 0%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #two_main_divs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #two_main_divs > * {
+        width: 100%;
+    }
+}

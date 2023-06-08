@@ -1,0 +1,14 @@
+#product_order {
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .product_name {
+        overflow-wrap: break-word;
+        max-width: 126px;
+    }
+
+    .product_quantity {
+        left: 50%;
+    }
+}

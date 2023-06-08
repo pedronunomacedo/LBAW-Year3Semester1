@@ -1,0 +1,21 @@
+#mainPageCategoryProductsDiv > :not(last-child) {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+  #productsFilteredList > * {
+    width: auto !important;
+  }
+}
+
+#productsFilteredList {
+  justify-content: center;
+}
+
+#productsFilteredList > :last-child {
+  justify-self: left;
+}
+
+#products_div > div {
+  width: 100%;
+}

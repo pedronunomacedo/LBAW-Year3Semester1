@@ -1,0 +1,63 @@
+#butons_login_page {
+    margin: 20px 0px;
+}
+
+#butons_login_page > :first-child {
+    margin-right: 10px;
+}
+
+#main_image_div {
+    position:relative;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    align-self: stretch;
+}
+
+#main_image_div > img {
+    width: 500px;
+}
+
+#login_page_content {
+    display: flex;
+    overflow: auto; 
+    margin-top: 20px;
+}
+
+#login_register_content {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    align-self: stretch;
+    margin-top: 60px;
+}
+
+#login_register_content > h1 {
+    float: middle;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#login_register_content > form { 
+    width: 20em;
+}
+
+.hovered_button:hover {
+    background-color: #157347 !important;
+    border-color: #157347 !important;
+}
+
+@media only screen and (max-width: 950px) {
+    #main_image_div {
+        display: none;
+    }
+
+    #login_register_content {
+        width: 100%;
+    }
+}
